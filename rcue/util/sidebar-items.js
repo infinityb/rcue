@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["timestamp_to_duration","Converts a CUE timestamp (MM:SS:FF) to a Duration where each frame FF is `1 / 75` of a second."],["unescape_string","Unescapes a string in a CUE field."]]});
