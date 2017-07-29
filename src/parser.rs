@@ -606,4 +606,11 @@ mod tests {
         let cue = parse_from_file("test/fixtures/missing.cue.missing", true);
         assert!(cue.is_err());
     }
+
+    #[test]
+    fn test_aflcrash_b4915d3a7ef82abdf96f2b5042452a69b2ea344c() {
+        use std::io;
+
+        let _ = parse(&mut io::Cursor::new(b"FILE"), true);
+    }
 }
